@@ -30,4 +30,11 @@ class StyleCreate{
 
     $this->css .= $css;
   }
+
+  public function addList(array $options) {
+    // CSSをリストで追加する
+    foreach ($options as $option) {
+      $this->add($option);
+    }
+  }
 }
