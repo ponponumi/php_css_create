@@ -2,6 +2,8 @@
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
+use Ponponumi\PhpCssCreate\StyleCreate;
+
 $options = [
   [
     "selector" => "h1",
@@ -24,6 +26,8 @@ $options = [
   ],
 ];
 
+$styleClass = new StyleCreate($options,true);
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -31,5 +35,6 @@ $options = [
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <?php $styleClass->getStyle(true) ?>
 </head>
 <body>
