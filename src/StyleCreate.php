@@ -3,5 +3,5 @@
 namespace Ponponumi\PhpCssCreate;
 
 class StyleCreate{
-  //
+  public string $css = "";
 }
