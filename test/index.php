@@ -5,6 +5,7 @@
 <p>テキストテキスト</p>
 <p class="hello">Hello World!!</p>
 
+<h2>ボックスのテスト</h2>
 <div class="box"></div>
 
 <?php require_once "footer.php" ?>
