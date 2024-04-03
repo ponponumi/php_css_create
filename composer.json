@@ -1,0 +1,17 @@
+{
+    "name": "ponponumi/php_css_create",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ponponumi\\PhpCssCreate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ponponumi",
+            "email": "ponponumi@gmail.com"
+        }
+    ],
+    "require": {}
+}
