@@ -41,4 +41,13 @@ class StyleCreate{
       $this->add($option);
     }
   }
+
+  public function get($echo=false) {
+    // CSSを取得する
+    if($echo){
+      echo $this->css;
+    }
+
+    return $this->css;
+  }
 }
