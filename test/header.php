@@ -40,6 +40,16 @@ $option = [
 $styleClass = new StyleCreate($options,true);
 $styleClass2 = new StyleCreate($option);
 
+// 追加のテストを実施
+$option = [
+  "selector" => "h2",
+  "property" => [
+    "color" => "#1275ab",
+  ];
+];
+
+$styleClass->add($option);
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
