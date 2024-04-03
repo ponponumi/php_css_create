@@ -92,4 +92,10 @@ class StyleCreate{
     $this->delete();
     $this->addList($option);
   }
+
+  public function overwriteSeparately(array $property,string $selector=""){
+    // プロパティとセレクタを別々に渡し、CSSを上書きする
+    $this->delete();
+    $this->addSeparately($property,$selector);
+  }
 }
