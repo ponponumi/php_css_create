@@ -61,4 +61,9 @@ class StyleCreate{
 
     return $css;
   }
+
+  public function delete(){
+    // CSSを削除する
+    $this->css = "";
+  }
 }
