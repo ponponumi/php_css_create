@@ -8,4 +8,26 @@ class StyleCreate{
   public function __construct(array $option) {
     //
   }
+
+  public function add(array $option) {
+    // CSSを追加する
+    if(!array_key_exists("selector",$option)) {
+      // セレクタがなければ
+      $option["selector"] = '*';
+    }
+
+    $css = $option["selector"];
+    $css .= "{";
+
+    if($option["property"] !== []) {
+      // プロパティがあれば
+      foreach ($option["property"] as $key => $value) {
+        $css .= $key . ":" . $value . ";";
+      }
+    }
+
+    $css .= "}";
+
+    $this->css .= $css;
+  }
 }
