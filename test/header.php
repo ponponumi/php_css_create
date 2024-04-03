@@ -26,6 +26,7 @@ $options = [
   ],
 ];
 
+// コンストラクタのテストを実行
 $styleClass = new StyleCreate($options,true);
 
 ?>
