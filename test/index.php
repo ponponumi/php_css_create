@@ -5,4 +5,6 @@
 <p>テキストテキスト</p>
 <p class="hello">Hello World!!</p>
 
+<div class="box"></div>
+
 <?php require_once "footer.php" ?>
