@@ -72,4 +72,10 @@ class StyleCreate{
     $this->delete();
     $this->add($option);
   }
+
+  public function overwriteList(array $options){
+    // CSSをリストで上書きする
+    $this->delete();
+    $this->addList($option);
+  }
 }
