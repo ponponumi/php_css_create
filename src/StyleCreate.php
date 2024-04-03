@@ -42,6 +42,20 @@ class StyleCreate{
     }
   }
 
+  public function addSeparately(array $property,string $selector="") {
+    // プロパティとセレクタを別々に追加する
+    if($selector === ""){
+      $selector = "*";
+    }
+
+    $option = [
+      "selector" => $selector,
+      "property" => $property,
+    ];
+
+    $this->add($option);
+  }
+
   public function get($echo=false) {
     // CSSを取得する
     if($echo){
