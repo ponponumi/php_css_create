@@ -66,4 +66,10 @@ class StyleCreate{
     // CSSを削除する
     $this->css = "";
   }
+
+  public function overwrite(array $option){
+    // CSSを上書きする
+    $this->delete();
+    $this->add($option);
+  }
 }
