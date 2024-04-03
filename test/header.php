@@ -22,7 +22,7 @@ $options = [
       "color" => "blue",
     ],
   ],
-]
+];
 
 ?>
 <!DOCTYPE html>
