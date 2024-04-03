@@ -45,7 +45,7 @@ $option = [
   "selector" => "h2",
   "property" => [
     "color" => "#1275ab",
-  ];
+  ],
 ];
 
 $styleClass->add($option);
