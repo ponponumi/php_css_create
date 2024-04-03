@@ -50,4 +50,15 @@ class StyleCreate{
 
     return $this->css;
   }
+
+  public function getStyle($echo=false) {
+    // CSSをstyleタグで囲って取得する
+    $css = '<style>' . $this->get() . '</style>';
+
+    if($echo){
+      echo $css;
+    }
+
+    return $css;
+  }
 }
