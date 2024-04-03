@@ -5,8 +5,12 @@ namespace Ponponumi\PhpCssCreate;
 class StyleCreate{
   public string $css = "";
 
-  public function __construct(array $option=[]) {
-    //
+  public function __construct(array $option=[],$listMode=false) {
+    if($listMode){
+      $this->addList($option);
+    }else{
+      $this->add($option);
+    }
   }
 
   public function add(array $option) {
