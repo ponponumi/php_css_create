@@ -110,4 +110,10 @@ class StyleCreate{
     $this->delete();
     $this->addSeparately($property,$selector);
   }
+
+  public function overwriteSeparatelyProperty(string $propertyKey,string $propertyValue,string $selector=""){
+    // プロパティのキーと値、セレクタを別々に渡し、CSSを上書きする
+    $this->delete();
+    $this->addSeparatelyProperty($propertyKey,$propertyValue,$selector);
+  }
 }
