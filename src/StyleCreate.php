@@ -102,7 +102,7 @@ class StyleCreate{
   public function overwriteList(array $options){
     // CSSをリストで上書きする
     $this->delete();
-    $this->addList($option);
+    $this->addList($options);
   }
 
   public function overwriteSeparately(array $property,string $selector=""){
