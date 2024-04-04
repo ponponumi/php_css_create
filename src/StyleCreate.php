@@ -116,4 +116,25 @@ class StyleCreate{
     $this->delete();
     $this->addSeparatelyProperty($propertyKey,$propertyValue,$selector);
   }
+
+  public function variableAdd(array $list){
+    // CSS変数を追加する
+    if($list !== []){
+      $option = [];
+
+      foreach($list as $key => $value){
+        $key = str_replace("_", "-", $key);
+
+        $start = mb_substr($key, 0, 2);
+
+        if($start !== "--"){
+          $key = "--" . $key;
+        }
+
+        $option[] = [$key => $value];
+      }
+
+      $this->addSeparately($option,":root");
+    }
+  }
 }
