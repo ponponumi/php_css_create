@@ -117,7 +117,7 @@ class StyleCreate{
     $this->addSeparatelyProperty($propertyKey,$propertyValue,$selector);
   }
 
-  public function variableAdd(array $list){
+  public function addVariable(array $list){
     // CSS変数を追加する
     if($list !== []){
       $option = [];
