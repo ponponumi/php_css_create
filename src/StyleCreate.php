@@ -20,6 +20,11 @@ class StyleCreate{
       $option["selector"] = '*';
     }
 
+    if(!array_key_exists("property",$option)) {
+      // プロパティがなければ
+      $option["property"] = [];
+    }
+
     if($option["property"] !== []) {
       // プロパティがあれば
       $css = $option["selector"];
