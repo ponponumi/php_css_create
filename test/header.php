@@ -67,6 +67,7 @@ $option = [
 $styleClass3->overwrite($option);
 
 $styleClass6->addSeparately(["color" => "black"],"h3");
+$styleClass6->addSeparatelyProperty("color","#ff8000","h4");
 
 ?>
 <!DOCTYPE html>
