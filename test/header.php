@@ -42,6 +42,7 @@ $styleClass2 = new StyleCreate($option);
 $styleClass3 = new StyleCreate($option);
 $styleClass4 = new StyleCreate($option);
 $styleClass5 = new StyleCreate();
+$styleClass6 = new StyleCreate();
 
 // 削除のテスト
 $styleClass4->delete();
@@ -64,6 +65,8 @@ $option = [
 ];
 
 $styleClass3->overwrite($option);
+
+$styleClass6->addSeparately(["color" => "black"],"h3");
 
 ?>
 <!DOCTYPE html>
