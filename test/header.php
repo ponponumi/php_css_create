@@ -8,7 +8,7 @@ $options = [
   [
     "selector" => "h1",
     "property" => [
-      "color" => "red",
+      "color" => "var(--title-color)",
       "border-bottom" => "1px solid #000",
     ],
   ],
