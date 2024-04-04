@@ -92,7 +92,7 @@ $styleClass7->addList([
 
 $styleClass->addVariable([
   "--main-color" => "#00ea21",
-  "theme-color" => "#2196ea",
+  "title-color" => "#2196ea",
   "-error-test" => "#2196ea",
   "__under_test_1" => "#2196ea",
   "under_test_2" => "#2196ea",
