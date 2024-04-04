@@ -131,7 +131,7 @@ class StyleCreate{
           $key = "--" . $key;
         }
 
-        $option[] = [$key => $value];
+        $option[$key] = $value;
       }
 
       $this->addSeparately($option,":root");
