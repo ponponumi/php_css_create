@@ -61,6 +61,13 @@ class StyleCreate{
     $this->add($option);
   }
 
+  public function addSeparatelyProperty(string $propertyKey,string $propertyValue,string $selector="") {
+    // プロパティのキーと値、セレクタを別々に追加する
+    $property = [$propertyKey => $propertyValue];
+
+    $this->addSeparately($property,$selector);
+  }
+
   public function get($echo=false) {
     // CSSを取得する
     if($echo){
