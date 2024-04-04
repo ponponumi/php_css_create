@@ -10,4 +10,6 @@
 
 <p><span>hello world</span></p>
 
+<pre><?php var_dump($styleClass4->get()) ?></pre>
+
 <?php require_once "footer.php" ?>
