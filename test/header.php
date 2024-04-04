@@ -41,6 +41,7 @@ $styleClass = new StyleCreate($options,true);
 $styleClass2 = new StyleCreate($option);
 $styleClass3 = new StyleCreate($option);
 $styleClass4 = new StyleCreate($option);
+$styleClass5 = new StyleCreate();
 
 // 削除のテスト
 $styleClass4->delete();
