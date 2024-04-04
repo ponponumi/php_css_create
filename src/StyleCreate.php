@@ -20,19 +20,19 @@ class StyleCreate{
       $option["selector"] = '*';
     }
 
-    $css = $option["selector"];
-    $css .= "{";
-
     if($option["property"] !== []) {
       // プロパティがあれば
+      $css = $option["selector"];
+      $css .= "{";
+
       foreach ($option["property"] as $key => $value) {
         $css .= $key . ":" . $value . ";";
       }
+
+      $css .= "}";
+
+      $this->css .= $css;
     }
-
-    $css .= "}";
-
-    $this->css .= $css;
   }
 
   public function addList(array $options) {
