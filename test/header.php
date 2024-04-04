@@ -71,6 +71,25 @@ $styleClass7->overwriteList($options);
 $styleClass6->addSeparately(["color" => "black"],"h3");
 $styleClass6->addSeparatelyProperty("color","#ff8000","h4");
 
+$styleClass7->addList([
+  [
+    "selector" => "img",
+    "property" => [
+      "display" => "inline-block",
+      "width" => "30%",
+    ],
+  ],
+  [
+    "selector" => "a",
+    "property" => [
+      "display" => "inline-block",
+      "width" => "40%",
+      "height" => "60px",
+      "text-align" => "center",
+    ],
+  ],
+]);
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
