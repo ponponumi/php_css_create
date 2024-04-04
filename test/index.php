@@ -16,4 +16,14 @@
 <pre><?php var_dump($styleClass7->get()) ?></pre>
 <pre><?php var_dump(htmlspecialchars($styleClass7->getStyle())) ?></pre>
 
+<?php
+
+$styleClass6->overwriteSeparately(["border" => "1px solid #f00"],"p");
+$styleClass7->overwriteSeparatelyProperty("border","1px solid #f00","p");
+
+?>
+
+<pre><?php var_dump($styleClass6->get()) ?></pre>
+<pre><?php var_dump($styleClass7->get()) ?></pre>
+
 <?php require_once "footer.php" ?>
