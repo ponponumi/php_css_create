@@ -39,6 +39,7 @@ $option = [
 // コンストラクタのテストを実行
 $styleClass = new StyleCreate($options,true);
 $styleClass2 = new StyleCreate($option);
+$styleClass3 = new StyleCreate($option);
 
 // 追加のテストを実施
 $option = [
@@ -50,6 +51,15 @@ $option = [
 
 $styleClass->add($option);
 
+$option = [
+  "selector" => "span",
+  "property" => [
+    "color" => "#57f405",
+  ],
+];
+
+$styleClass3->overwrite($option);
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -59,5 +69,6 @@ $styleClass->add($option);
   <title>Document</title>
   <?php $styleClass->getStyle(true) ?>
   <?php $styleClass2->getStyle(true) ?>
+  <?php $styleClass3->getStyle(true) ?>
 </head>
 <body>
