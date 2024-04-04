@@ -8,4 +8,6 @@
 <h2>ボックスのテスト</h2>
 <div class="box"></div>
 
+<p><span>hello world</span></p>
+
 <?php require_once "footer.php" ?>
