@@ -71,7 +71,7 @@ $css = $styleCreate->get();
 
 var_dump($css);
 
-// 出力結果 string(15) "h1{color:#f00;}p{color:#0f0;}"
+// 出力結果 string(29) "h1{color:#f00;}p{color:#0f0;}"
 ```
 
 ## ライセンスについて
