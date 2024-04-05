@@ -21,3 +21,7 @@ use Ponponumi\PhpCssCreate\StyleCreate;
 
 $styleCreate = new StyleCreate();
 ```
+
+## ライセンスについて
+
+このパッケージは、MITライセンスとして作成されています。
