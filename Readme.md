@@ -9,3 +9,15 @@
 ```bash
 composer require ponponumi/php_css_create
 ```
+
+## インスタンスの作成方法について
+
+本パッケージでは、インスタンスの作成が必要です。
+
+次の方法で、インスタンスの作成が可能です。
+
+```php
+use Ponponumi\PhpCssCreate\StyleCreate;
+
+$styleCreate = new StyleCreate();
+```
