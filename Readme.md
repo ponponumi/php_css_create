@@ -45,6 +45,35 @@ var_dump($css);
 // 出力結果 string(15) "h2{color:#00f;}"
 ```
 
+複数のデータを渡したい場合は、このようにする事で、渡す事が出来ます。
+
+```php
+use Ponponumi\PhpCssCreate\StyleCreate;
+
+$data = [
+  [
+    "selector" => "h1",
+    "property" => [
+      "color" => "#f00"
+    ]
+  ],
+  [
+    "selector" => "p",
+    "property" => [
+      "color" => "#0f0"
+    ]
+  ],
+];
+
+$styleCreate = new StyleCreate($data,true);
+
+$css = $styleCreate->get();
+
+var_dump($css);
+
+// 出力結果 string(15) "h1{color:#f00;}p{color:#0f0;}"
+```
+
 ## ライセンスについて
 
 このパッケージは、MITライセンスとして作成されています。
