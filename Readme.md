@@ -76,6 +76,36 @@ var_dump($css);
 // 出力結果 string(29) "h1{color:#f00;}p{color:#0f0;}"
 ```
 
+## データを追加する方法について
+
+```php
+use Ponponumi\PhpCssCreate\StyleCreate;
+
+$data = [
+  "selector" => "h2",
+  "property" => [
+    "color" => "#00f"
+  ]
+];
+
+$styleCreate = new StyleCreate($data);
+
+$addData = [
+  "selector" => ".text",
+  "property" => [
+    "font-size" => "17px"
+  ]
+];
+
+$styleCreate->add($addData);
+
+$css = $styleCreate->get();
+
+var_dump($css);
+
+// 出力結果 string(37) "h2{color:#00f;}.text{font-size:17px;}"
+```
+
 ## ライセンスについて
 
 このパッケージは、MITライセンスとして作成されています。
