@@ -117,13 +117,15 @@ class StyleCreate{
     $this->addSeparatelyProperty($propertyKey,$propertyValue,$selector);
   }
 
-  public function addVariable(array $list){
+  public function addVariable(array $list,$underHyphenConvert=true){
     // CSS変数を追加する
     if($list !== []){
       $option = [];
 
       foreach($list as $key => $value){
-        $key = str_replace("_", "-", $key);
+        if($underHyphenConvert){
+          $key = str_replace("_", "-", $key);
+        }
 
         $start = mb_substr($key, 0, 2);
 
