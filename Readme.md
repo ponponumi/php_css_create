@@ -193,6 +193,26 @@ var_dump($css);
 
 次の方法で、追加する事が出来ます。
 
+```php
+use Ponponumi\PhpCssCreate\StyleCreate;
+
+$styleCreate = new StyleCreate();
+
+$variableList = [
+  "theme-color" => "#15f132",
+  "text_color" => "#222",
+  "--link-color" => "#52e3f2",
+  "__link_hover_color" => "#52e3f2",
+];
+
+$styleCreate->addVariable($variableList,"a");
+$css = $styleCreate->get();
+
+var_dump($css);
+
+// 出力結果 string(95) ":root{--theme-color:#15f132;--text-color:#222;--link-color:#52e3f2;--link-hover-color:#52e3f2;}"
+```
+
 ## ライセンスについて
 
 このパッケージは、MITライセンスとして作成されています。
