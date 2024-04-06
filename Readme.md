@@ -144,6 +144,27 @@ var_dump($css);
 // 出力結果 string(56) "h2{color:#00f;}.text{font-size:17px;}.hello{color:#04f;}"
 ```
 
+更に、次の方法でも追加する事が出来ます。
+
+```php
+use Ponponumi\PhpCssCreate\StyleCreate;
+
+$styleCreate = new StyleCreate();
+
+$propertyList = [
+  "color" => "#03e",
+  "border-bottom" => "1px solid #03e",
+];
+
+$styleCreate->addSeparately($propertyList,"a");
+
+$css = $styleCreate->get();
+
+var_dump($css);
+
+// 出力結果 string(43) "a{color:#03e;border-bottom:1px solid #03e;}"
+```
+
 ## ライセンスについて
 
 このパッケージは、MITライセンスとして作成されています。
