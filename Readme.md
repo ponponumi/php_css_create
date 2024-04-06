@@ -106,6 +106,44 @@ var_dump($css);
 // 出力結果 string(37) "h2{color:#00f;}.text{font-size:17px;}"
 ```
 
+複数のデータを渡したい場合は、次の方法で渡す事が出来ます。
+
+```php
+use Ponponumi\PhpCssCreate\StyleCreate;
+
+$data = [
+  "selector" => "h2",
+  "property" => [
+    "color" => "#00f"
+  ]
+];
+
+$styleCreate = new StyleCreate($data);
+
+$addList = [
+  [
+    "selector" => ".text",
+    "property" => [
+      "font-size" => "17px"
+    ]
+  ],
+  [
+    "selector" => ".hello",
+    "property" => [
+      "color" => "#04f"
+    ]
+  ],
+];
+
+$styleCreate->addList($addList);
+
+$css = $styleCreate->get();
+
+var_dump($css);
+
+// 出力結果 string(56) "h2{color:#00f;}.text{font-size:17px;}.hello{color:#04f;}"
+```
+
 ## ライセンスについて
 
 このパッケージは、MITライセンスとして作成されています。
