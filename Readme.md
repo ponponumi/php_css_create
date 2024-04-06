@@ -165,6 +165,30 @@ var_dump($css);
 // 出力結果 string(43) "a{color:#03e;border-bottom:1px solid #03e;}"
 ```
 
+## データを削除する方法について
+
+追加したデータは、次の方法で削除する事が出来ますが、個別に削除する事は出来ませんのでご注意下さい。
+
+```php
+use Ponponumi\PhpCssCreate\StyleCreate;
+
+$styleCreate = new StyleCreate();
+
+$propertyList = [
+  "color" => "#03e",
+  "border-bottom" => "1px solid #03e",
+];
+
+$styleCreate->addSeparately($propertyList,"a");
+$styleCreate->delete();
+
+$css = $styleCreate->get();
+
+var_dump($css);
+
+// 出力結果 string(0) ""
+```
+
 ## ライセンスについて
 
 このパッケージは、MITライセンスとして作成されています。
