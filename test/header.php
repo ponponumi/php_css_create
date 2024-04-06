@@ -98,6 +98,14 @@ $styleClass->addVariable([
   "under_test_2" => "#2196ea",
 ]);
 
+$styleClass->addVariable([
+  "--theme-color" => "#00ea21",
+  "title-color" => "#2196ea",
+  "-error-test" => "#2196ea",
+  "__under_test_1" => "#2196ea",
+  "under_test_2" => "#2196ea",
+],false);
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
