@@ -205,7 +205,7 @@ $variableList = [
   "__link_hover_color" => "#52e3f2",
 ];
 
-$styleCreate->addVariable($variableList,"a");
+$styleCreate->addVariable($variableList);
 $css = $styleCreate->get();
 
 var_dump($css);
